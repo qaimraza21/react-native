@@ -4,7 +4,7 @@ import Child from './Child';
 
 const Props = () => {
     const [count, setCount] = useState(0);
-    const [item, setItems] = useState(0);
+    const [item, setItems] = useState(10);
     
   return (
     <View>
@@ -15,7 +15,7 @@ const Props = () => {
       />
       <Button 
          title='Items'
-         onPress={() => setItems(item + 10)}
+         onPress={() => setItems(item * 10)}
       />
       <Child data={count} items={item}/>
     </View>
